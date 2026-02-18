@@ -10,7 +10,7 @@ def create_nested_folders(base_path, command):
     while i < len(tokens):
         token = tokens[i]
 
-        # Buat file
+        # make file
         if token == "-f":
             folder_name = tokens[i + 1]
             file_name = tokens[i + 2]
@@ -38,7 +38,7 @@ def create_nested_folders(base_path, command):
             i += 3
             continue
 
-        # Handle titik (.)
+        # Handle dot (.)
         elif token.endswith("."):
             folder_name = token.replace(".", "")
             folder_path = os.path.join(base_path, folder_name)
@@ -77,3 +77,4 @@ if __name__ == "__main__":
     command = input("Enter command: ")
 
     create_nested_folders(base_path, command)
+
