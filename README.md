@@ -1,4 +1,4 @@
-## File Manager Automation Tool – User Guide
+## simple File Manager Automation Tool – User Guide
 
 This tool allows you to automatically create folders and files using a simple command syntax inside Python.
 
